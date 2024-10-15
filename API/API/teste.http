@@ -1,0 +1,35 @@
+### testar a raiz do projeto
+GET http://localhost:5251
+
+### cadastrar funcionario
+POST http://localhost:5251/api/funcionario/cadastrar
+Content-Type: application/json
+
+{
+    "nome": "bianca",
+    "cpf": "3"
+}
+
+### listar funcionario
+GET http://localhost:5251/api/funcionario/listar
+
+### cadastrar folha
+POST http://localhost:5251/api/folha/cadastrar
+Content-Type: application/json
+
+{
+    "valor": 50,
+    "quantidade": 1000,
+    "mes": 10,
+    "ano": 2023,
+    "funcionarioId": 4
+}
+
+### listar folha
+GET http://localhost:5251/api/folha/listar
+
+### buscar folha
+GET http://localhost:5251/api/folha/buscar/3/2023/1
+
+###
+DELETE http://localhost:5251/api/funcionrio/deletar/1
