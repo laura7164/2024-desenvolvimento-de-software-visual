@@ -37,16 +37,48 @@ git status
 git commit -m "mensagem commit"
 git push
 
+
 passos para fazer o projeto (parte 2)
+1 - abrir o powershell na pasta do projeto
+2 - npx create-react-app front --template typescript
+
+caso apareça algum erro de permissao, fazer isto:
 1 - abrir o powershell como administrador
 2 - Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
-4 - npm install -g npm (talvez)
 3 - npx create-react-app front --template typescript
-4 - abrir o vscode
-5 - apagar arquivos:
+4 - abrir o vscode (talvez tenha que abrir como administrador também)
+
+3 - apagar arquivos:
 	    deixar so index.html no public
 	    deixar App.tsx, index.tsx e react-app-env.d.ts no src
 
+4 - modificar o App.tsx:
+import React from "react";
+
+function App() {
+  return (
+    <div>
+      <h1>Projeto base em React com TypeScript</h1>
+    </div>
+  );
+}
+
+export default App;
+
+5 - modificar o index.tsx:
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "./styles.css";
+
+const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
 6 - npm install react-router-dom @types/react-router-dom
+7 - npm install axios ou npm i axios @types/axios
 
 obs: npm start para rodar o codigo
