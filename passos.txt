@@ -40,10 +40,13 @@ git push
 passos para fazer o projeto (parte 2)
 1 - abrir o powershell como administrador
 2 - Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+4 - npm install -g npm (talvez)
 3 - npx create-react-app front --template typescript
 4 - abrir o vscode
 5 - apagar arquivos:
 	    deixar so index.html no public
 	    deixar App.tsx, index.tsx e react-app-env.d.ts no src
 
-npm start para rodar o codigo
+6 - npm install react-router-dom @types/react-router-dom
+
+obs: npm start para rodar o codigo
