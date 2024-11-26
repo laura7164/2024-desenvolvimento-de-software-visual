@@ -42,9 +42,8 @@ deletar a pasta bugada do git clone criado
 git status
 git add .
 git status
-git commit -m "mensagem commit"
+git commit -m "arquivo tal removido"
 git push
-
 
 passos para fazer o projeto (parte 2)
 1 - abrir o powershell na pasta do projeto
