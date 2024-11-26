@@ -37,7 +37,7 @@ git status
 git commit -m "mensagem commit"
 git push
 
-passos para fazer o projeto (parte 1)
+passos para fazer o projeto (parte 2)
 1 - abrir o powershell como administrador
 2 - Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 3 - npx create-react-app front --template typescript
