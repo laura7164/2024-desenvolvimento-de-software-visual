@@ -1,0 +1,13 @@
+### requisação para a raiz da aplicação
+GET http://localhost:5020
+
+### listar categorias
+GET http://localhost:5020/api/categoria/listar
+
+### cadastrar categoria
+POST http://localhost:5020/api/categoria/cadastrar
+Content-Type: application/json
+
+{
+    "nome" : "Alimento"
+}

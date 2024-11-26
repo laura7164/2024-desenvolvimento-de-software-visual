@@ -1,0 +1,35 @@
+### requisação para a raiz da aplicação
+GET http://localhost:5020
+
+### listar produtos
+GET http://localhost:5020/api/produto/listar
+
+### buscar produto
+GET http://localhost:5020/api/produto/buscar/e05cc469-d0df-462e-82ae-5153aaf3f540
+
+### cadastrar produto
+POST http://localhost:5020/api/produto/cadastrar
+Content-Type: application/json
+
+{
+  "nome": "Teste",
+  "descricao": "Descrição teste",
+  "quantidade": 10,
+  "preco": 15.5,
+  "categoriaId": 1
+}
+
+### deletar produto
+DELETE http://localhost:5020/api/produto/deletar/eef38bd9-3752-4f7e-b0fd-5bb95c88da05
+
+### alterar produto
+PUT http://localhost:5020/api/produto/alterar/3fc5c0a7-57f5-4991-a9f0-8a8802f4d48b
+Content-Type: application/json
+
+{
+    "nome" : "Água",
+    "descricao" : "Água",
+    "preco" : 4.5,
+    "quantidade" : 153,
+    "categoriaId" : 1    
+}
