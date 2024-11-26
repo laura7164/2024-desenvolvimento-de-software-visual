@@ -1,4 +1,4 @@
-passos para fazer o projeto
+passos para fazer o projeto (parte 1)
 1 - criar uma solução
 dotnet new sln --output API
 2 - criar um projeto web (entrar na solução para criar o projeto)
@@ -36,3 +36,14 @@ git add .
 git status
 git commit -m "mensagem commit"
 git push
+
+passos para fazer o projeto (parte 1)
+1 - abrir o powershell como administrador
+2 - Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+3 - npx create-react-app front --template typescript
+4 - abrir o vscode
+5 - apagar arquivos:
+	    deixar so index.html no public
+	    deixar App.tsx, index.tsx e react-app-env.d.ts no src
+
+npm start para rodar o codigo
